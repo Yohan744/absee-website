@@ -1,0 +1,90 @@
+#sectionTwo {
+  position: relative;
+  padding: 200px 200px 250px;
+
+  @media screen and (max-width: 450px) {
+    padding: 100px 50px 100px;
+  }
+
+  .wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .top-part {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 65px;
+
+      @media screen and (max-width: 450px) {
+        margin-bottom: 40px;
+      }
+
+      p {
+        @include titleBefore();
+      }
+
+      img {
+        position: relative;
+        height: 20px;
+        width: 55px;
+      }
+
+    }
+
+    .bottom-part {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      @media screen and (max-width: 450px) {
+        flex-direction: column;
+      }
+
+      .left-part, .right-part {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        max-width: 680px;
+
+        @media screen and (max-width: 450px) {
+          max-width: available;
+        }
+
+        h3 {
+          @include title();
+          margin-bottom: 65px;
+
+          @media screen and (max-width: 450px) {
+            margin-bottom: 30px;
+          }
+
+        }
+
+        p {
+          @include paragraph();
+          font-weight: 300;
+
+          span {
+            font-weight: 500;
+          }
+
+        }
+
+      }
+
+      .left-part {
+
+        @media screen and (max-width: 450px) {
+          margin-bottom: 75px;
+        }
+
+      }
+
+    }
+
+  }
+
+}

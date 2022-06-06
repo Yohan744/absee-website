@@ -1,0 +1,870 @@
+@import url("https://fonts.cdnfonts.com/css/gotham");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+#sectionOne {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+#sectionOne .left-part {
+  position: relative;
+  width: fit-content;
+  background: #1d5afc;
+  padding: 0 75px;
+}
+@media screen and (max-width: 450px) {
+  #sectionOne .left-part {
+    padding: 0 50px;
+  }
+}
+#sectionOne .left-part .wrapper {
+  position: relative;
+  margin: 220px 0 130px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 450px) {
+  #sectionOne .left-part .wrapper {
+    margin: 200px 0 60px;
+  }
+}
+#sectionOne .left-part .wrapper h2 {
+  position: relative;
+  font-family: "Gotham", sans-serif;
+  font-size: 63px;
+  font-weight: 600;
+  line-height: 47px;
+  text-align: left;
+  color: #232221;
+  margin-bottom: 100px;
+  line-height: 75px;
+  color: white;
+}
+@media screen and (max-width: 450px) {
+  #sectionOne .left-part .wrapper h2 {
+    font-size: 40px;
+    line-height: normal;
+  }
+}
+@media screen and (max-width: 450px) {
+  #sectionOne .left-part .wrapper h2 {
+    margin-bottom: 65px;
+    font-size: 38px;
+  }
+  #sectionOne .left-part .wrapper h2 br {
+    display: none;
+  }
+}
+#sectionOne .left-part .wrapper h2 span {
+  text-decoration: underline;
+  text-underline-color: white;
+  text-underline-position: under;
+}
+@media screen and (max-width: 450px) {
+  #sectionOne .left-part .wrapper h2 span {
+    text-decoration: none;
+  }
+}
+#sectionOne .left-part .wrapper p {
+  position: relative;
+  font-family: "Gotham", sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: left;
+  color: #232221;
+  color: white;
+}
+@media screen and (max-width: 450px) {
+  #sectionOne .left-part .wrapper p {
+    font-size: 21px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  #sectionOne .left-part .wrapper p br {
+    display: none;
+  }
+}
+#sectionOne .left-part .wrapper a .arrow {
+  position: relative;
+  margin: 100px auto 0;
+  height: fit-content;
+  width: fit-content;
+  border-radius: 100%;
+  border: 2px solid white;
+  padding: 9px 11px;
+}
+@media screen and (max-width: 450px) {
+  #sectionOne .left-part .wrapper a .arrow {
+    margin: 65px auto 0;
+    padding: 6px 9px;
+  }
+}
+#sectionOne .left-part .wrapper a .arrow img {
+  position: relative;
+  transform: rotate(90deg);
+  height: 35px;
+}
+@media screen and (max-width: 450px) {
+  #sectionOne .left-part .wrapper a .arrow img {
+    height: 25px;
+  }
+}
+#sectionOne .left-part .menu-wrapper {
+  position: absolute;
+  top: 65px;
+  left: 65px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: blueviolet;
+}
+#sectionOne .right-part {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  background: url("../img/picture-one.png") center/cover no-repeat;
+}
+@media screen and (max-width: 450px) {
+  #sectionOne .right-part {
+    display: none;
+  }
+}
+#sectionOne .right-part .logo {
+  position: relative;
+  top: 65px;
+  left: 65px;
+  height: 38px;
+}
+#sectionOne .right-part .logo img {
+  position: relative;
+  height: 100%;
+}
+
+#sectionTwo {
+  position: relative;
+  padding: 200px 200px 250px;
+}
+@media screen and (max-width: 450px) {
+  #sectionTwo {
+    padding: 100px 50px 100px;
+  }
+}
+#sectionTwo .wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#sectionTwo .wrapper .top-part {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 65px;
+}
+@media screen and (max-width: 450px) {
+  #sectionTwo .wrapper .top-part {
+    margin-bottom: 40px;
+  }
+}
+#sectionTwo .wrapper .top-part p {
+  position: relative;
+  font-family: "Gotham", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #232221;
+}
+#sectionTwo .wrapper .top-part img {
+  position: relative;
+  height: 20px;
+  width: 55px;
+}
+#sectionTwo .wrapper .bottom-part {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media screen and (max-width: 450px) {
+  #sectionTwo .wrapper .bottom-part {
+    flex-direction: column;
+  }
+}
+#sectionTwo .wrapper .bottom-part .left-part, #sectionTwo .wrapper .bottom-part .right-part {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 680px;
+}
+@media screen and (max-width: 450px) {
+  #sectionTwo .wrapper .bottom-part .left-part, #sectionTwo .wrapper .bottom-part .right-part {
+    max-width: available;
+  }
+}
+#sectionTwo .wrapper .bottom-part .left-part h3, #sectionTwo .wrapper .bottom-part .right-part h3 {
+  position: relative;
+  font-family: "Gotham", sans-serif;
+  font-size: 63px;
+  font-weight: 600;
+  line-height: 47px;
+  text-align: left;
+  color: #232221;
+  margin-bottom: 65px;
+}
+@media screen and (max-width: 450px) {
+  #sectionTwo .wrapper .bottom-part .left-part h3, #sectionTwo .wrapper .bottom-part .right-part h3 {
+    font-size: 40px;
+    line-height: normal;
+  }
+}
+@media screen and (max-width: 450px) {
+  #sectionTwo .wrapper .bottom-part .left-part h3, #sectionTwo .wrapper .bottom-part .right-part h3 {
+    margin-bottom: 30px;
+  }
+}
+#sectionTwo .wrapper .bottom-part .left-part p, #sectionTwo .wrapper .bottom-part .right-part p {
+  position: relative;
+  font-family: "Gotham", sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: left;
+  color: #232221;
+  font-weight: 300;
+}
+@media screen and (max-width: 450px) {
+  #sectionTwo .wrapper .bottom-part .left-part p, #sectionTwo .wrapper .bottom-part .right-part p {
+    font-size: 21px;
+    line-height: 30px;
+  }
+}
+#sectionTwo .wrapper .bottom-part .left-part p span, #sectionTwo .wrapper .bottom-part .right-part p span {
+  font-weight: 500;
+}
+@media screen and (max-width: 450px) {
+  #sectionTwo .wrapper .bottom-part .left-part {
+    margin-bottom: 75px;
+  }
+}
+
+#sectionThree {
+  position: relative;
+  padding: 200px 200px 250px;
+  background: #f8f8f8;
+}
+@media screen and (max-width: 450px) {
+  #sectionThree {
+    padding: 100px 50px 100px;
+  }
+}
+#sectionThree .wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#sectionThree .wrapper .top-part {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 450px) {
+  #sectionThree .wrapper .top-part {
+    margin-bottom: 65px;
+  }
+}
+#sectionThree .wrapper .top-part p {
+  position: relative;
+  font-family: "Gotham", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #232221;
+}
+#sectionThree .wrapper .top-part img {
+  position: relative;
+  height: 20px;
+  width: 55px;
+}
+#sectionThree .wrapper .top-part h3 {
+  position: relative;
+  font-family: "Gotham", sans-serif;
+  font-size: 63px;
+  font-weight: 600;
+  line-height: 47px;
+  text-align: left;
+  color: #232221;
+  margin-top: 40px;
+}
+@media screen and (max-width: 450px) {
+  #sectionThree .wrapper .top-part h3 {
+    font-size: 40px;
+    line-height: normal;
+  }
+}
+#sectionThree .wrapper .bottom-part {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: start;
+}
+@media screen and (max-width: 450px) {
+  #sectionThree .wrapper .bottom-part {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+#sectionThree .wrapper .bottom-part .card {
+  position: relative;
+  max-width: 272px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 450px) {
+  #sectionThree .wrapper .bottom-part .card {
+    margin: 0 auto 50px;
+    max-width: 350px;
+  }
+  #sectionThree .wrapper .bottom-part .card:last-child {
+    margin: 0 auto;
+  }
+}
+#sectionThree .wrapper .bottom-part .card img {
+  position: relative;
+  margin: 0 auto 35px;
+  height: 50px;
+}
+#sectionThree .wrapper .bottom-part .card p {
+  position: relative;
+  font-family: "Gotham", sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: left;
+  color: #232221;
+  text-align: center;
+  line-height: 25px;
+}
+@media screen and (max-width: 450px) {
+  #sectionThree .wrapper .bottom-part .card p {
+    font-size: 21px;
+    line-height: 30px;
+  }
+}
+#sectionThree .wrapper .bottom-part .card p span {
+  font-weight: 600;
+}
+
+#sectionFour {
+  position: relative;
+  padding: 100px 200px 225px;
+}
+@media screen and (max-width: 450px) {
+  #sectionFour {
+    padding: 0;
+  }
+}
+#sectionFour .wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#sectionFour .wrapper .top-part {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 65px;
+}
+@media screen and (max-width: 450px) {
+  #sectionFour .wrapper .top-part {
+    margin-bottom: 30px;
+    padding: 100px 50px 0;
+  }
+}
+#sectionFour .wrapper .top-part p {
+  position: relative;
+  font-family: "Gotham", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #232221;
+}
+#sectionFour .wrapper .top-part img {
+  position: relative;
+  height: 20px;
+  width: 55px;
+}
+#sectionFour .wrapper .top-part h3 {
+  position: relative;
+  font-family: "Gotham", sans-serif;
+  font-size: 63px;
+  font-weight: 600;
+  line-height: 47px;
+  text-align: left;
+  color: #232221;
+  margin-top: 40px;
+}
+@media screen and (max-width: 450px) {
+  #sectionFour .wrapper .top-part h3 {
+    font-size: 40px;
+    line-height: normal;
+  }
+}
+#sectionFour .wrapper .bottom-part {
+  position: relative;
+  display: flex;
+  height: 600px;
+  border-radius: 50px;
+}
+@media screen and (max-width: 450px) {
+  #sectionFour .wrapper .bottom-part {
+    height: auto;
+    margin-bottom: 100px;
+  }
+}
+#sectionFour .wrapper .bottom-part .splide {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+#sectionFour .wrapper .bottom-part .splide .splide__track {
+  height: 100%;
+}
+#sectionFour .wrapper .bottom-part .splide .splide__slide {
+  padding: 50px 100px;
+}
+@media screen and (max-width: 450px) {
+  #sectionFour .wrapper .bottom-part .splide .splide__slide {
+    padding: 50px 50px;
+  }
+}
+#sectionFour .wrapper .bottom-part .splide .splide__slide .container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
+  border: 3px solid #232221;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 50px;
+  cursor: pointer;
+}
+@media screen and (max-width: 450px) {
+  #sectionFour .wrapper .bottom-part .splide .splide__slide .container {
+    flex-direction: column;
+    padding: 0 30px;
+  }
+}
+#sectionFour .wrapper .bottom-part .splide .splide__slide .container .left-part {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 450px) {
+  #sectionFour .wrapper .bottom-part .splide .splide__slide .container .left-part {
+    width: auto;
+    margin: 30px 0;
+  }
+}
+#sectionFour .wrapper .bottom-part .splide .splide__slide .container .left-part .number {
+  position: relative;
+  margin: 0 auto 30px;
+  width: fit-content;
+  border-radius: 100%;
+  border: 2px solid #232221;
+  padding: 10px;
+}
+#sectionFour .wrapper .bottom-part .splide .splide__slide .container .left-part .number p {
+  position: relative;
+  font-family: "Gotham", sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: left;
+  color: #232221;
+  top: 7px;
+  line-height: 30px;
+}
+@media screen and (max-width: 450px) {
+  #sectionFour .wrapper .bottom-part .splide .splide__slide .container .left-part .number p {
+    font-size: 21px;
+    line-height: 30px;
+  }
+}
+#sectionFour .wrapper .bottom-part .splide .splide__slide .container .left-part p {
+  position: relative;
+  position: relative;
+  font-family: "Gotham", sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: left;
+  color: #232221;
+  line-height: 30px;
+  text-align: center;
+}
+@media screen and (max-width: 450px) {
+  #sectionFour .wrapper .bottom-part .splide .splide__slide .container .left-part p {
+    font-size: 21px;
+    line-height: 30px;
+  }
+}
+#sectionFour .wrapper .bottom-part .splide .splide__slide .container .left-part p span {
+  font-weight: 500;
+}
+#sectionFour .wrapper .bottom-part .splide .splide__slide .container .right-part {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 450px) {
+  #sectionFour .wrapper .bottom-part .splide .splide__slide .container .right-part {
+    width: auto;
+  }
+}
+#sectionFour .wrapper .bottom-part .splide .splide__slide .container .right-part img {
+  position: relative;
+  height: 55%;
+  width: 75%;
+}
+#sectionFour .wrapper .bottom-part .splide .my-slider-progress {
+  padding: 0 110px;
+}
+@media screen and (max-width: 450px) {
+  #sectionFour .wrapper .bottom-part .splide .my-slider-progress {
+    padding: 0 55px;
+  }
+}
+#sectionFour .wrapper .bottom-part .splide .my-slider-progress .my-slider-progress-bar {
+  background: #ff7fdf;
+  height: 6px;
+  transition: width 400ms ease;
+  width: 0;
+}
+#sectionFour .wrapper .bottom-part .splide .splide__pagination {
+  display: none;
+}
+
+#sectionFive {
+  position: relative;
+  padding: 0 200px 150px;
+}
+@media screen and (max-width: 450px) {
+  #sectionFive {
+    padding: 0 50px 50px;
+  }
+}
+#sectionFive .wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#sectionFive .wrapper .bottom-part {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#sectionFive .wrapper .bottom-part iframe {
+  position: relative;
+  height: 900px;
+  width: 100%;
+}
+@media screen and (max-width: 450px) {
+  #sectionFive .wrapper .bottom-part iframe {
+    height: 180px;
+  }
+}
+
+#sectionSix {
+  position: relative;
+  padding: 200px 200px 250px;
+  background: #f8f8f8;
+}
+@media screen and (max-width: 450px) {
+  #sectionSix {
+    padding: 100px 50px 100px;
+  }
+}
+#sectionSix .wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#sectionSix .wrapper .top-part {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 450px) {
+  #sectionSix .wrapper .top-part {
+    margin-bottom: 65px;
+  }
+}
+#sectionSix .wrapper .top-part p {
+  position: relative;
+  font-family: "Gotham", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #232221;
+}
+#sectionSix .wrapper .top-part img {
+  position: relative;
+  height: 20px;
+  width: 55px;
+}
+#sectionSix .wrapper .top-part h3 {
+  position: relative;
+  font-family: "Gotham", sans-serif;
+  font-size: 63px;
+  font-weight: 600;
+  line-height: 47px;
+  text-align: left;
+  color: #232221;
+  margin-top: 40px;
+}
+@media screen and (max-width: 450px) {
+  #sectionSix .wrapper .top-part h3 {
+    font-size: 40px;
+    line-height: normal;
+  }
+}
+#sectionSix .wrapper .bottom-part {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media screen and (max-width: 450px) {
+  #sectionSix .wrapper .bottom-part {
+    flex-direction: column;
+  }
+}
+#sectionSix .wrapper .bottom-part .card {
+  position: relative;
+  border-radius: 50px;
+  border: 1px solid #fd4407;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 45px;
+}
+@media screen and (max-width: 450px) {
+  #sectionSix .wrapper .bottom-part .card {
+    padding: 30px;
+    margin-bottom: 50px;
+    border: 2px solid #fd4407;
+  }
+  #sectionSix .wrapper .bottom-part .card:last-child {
+    margin-bottom: 0;
+  }
+}
+#sectionSix .wrapper .bottom-part .card .card-top-part {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 45px;
+}
+#sectionSix .wrapper .bottom-part .card .card-top-part img {
+  position: relative;
+  height: 72px;
+  width: 72px;
+  border-radius: 100%;
+}
+@media screen and (max-width: 450px) {
+  #sectionSix .wrapper .bottom-part .card .card-top-part img {
+    height: 50px;
+    width: 50px;
+  }
+}
+#sectionSix .wrapper .bottom-part .card .card-top-part .separator {
+  margin: 15px 15px 0;
+  font-size: 30px;
+  line-height: 10px;
+}
+#sectionSix .wrapper .bottom-part .card .card-top-part .name {
+  position: relative;
+  position: relative;
+  font-family: "Gotham", sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: left;
+  color: #232221;
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 450px) {
+  #sectionSix .wrapper .bottom-part .card .card-top-part .name {
+    font-size: 21px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  #sectionSix .wrapper .bottom-part .card .card-top-part .name {
+    margin-bottom: 0;
+    margin-top: 12px;
+  }
+}
+#sectionSix .wrapper .bottom-part .card p {
+  position: relative;
+  font-family: "Gotham", sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: left;
+  color: #232221;
+  line-height: 35px;
+  font-size: 22px;
+  font-weight: 300;
+  max-width: 360px;
+}
+@media screen and (max-width: 450px) {
+  #sectionSix .wrapper .bottom-part .card p {
+    font-size: 21px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  #sectionSix .wrapper .bottom-part .card p {
+    max-width: available;
+  }
+}
+
+#sectionSeven {
+  position: relative;
+  background: #232221;
+  display: flex;
+  flex-direction: column;
+}
+#sectionSeven .top-part {
+  position: relative;
+  margin: 60px auto 80px;
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 450px) {
+  #sectionSeven .top-part {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+#sectionSeven .top-part .left-part {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#sectionSeven .top-part .left-part img {
+  position: relative;
+  height: 50px;
+}
+#sectionSeven .top-part .middle-part, #sectionSeven .top-part .right-part {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#sectionSeven .top-part .middle-part a, #sectionSeven .top-part .right-part a {
+  text-decoration: none;
+}
+#sectionSeven .top-part .middle-part a p, #sectionSeven .top-part .right-part a p {
+  position: relative;
+  font-family: "Gotham", sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: left;
+  color: #232221;
+  line-height: 40px;
+  color: white;
+}
+@media screen and (max-width: 450px) {
+  #sectionSeven .top-part .middle-part a p, #sectionSeven .top-part .right-part a p {
+    font-size: 21px;
+    line-height: 30px;
+  }
+}
+#sectionSeven .top-part .middle-part {
+  margin: 0 150px;
+}
+@media screen and (max-width: 450px) {
+  #sectionSeven .top-part .middle-part {
+    margin: 65px 0;
+  }
+}
+#sectionSeven .bottom-part {
+  position: relative;
+  margin: 0 auto 5px;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+}
+#sectionSeven .bottom-part p {
+  position: relative;
+  font-family: "Gotham", sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: left;
+  color: #232221;
+  color: white;
+}
+@media screen and (max-width: 450px) {
+  #sectionSeven .bottom-part p {
+    font-size: 21px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  #sectionSeven .bottom-part p {
+    font-size: 15px;
+  }
+}
+#sectionSeven .bottom-part .separator {
+  margin: 0 20px;
+}
+@media screen and (max-width: 450px) {
+  #sectionSeven .bottom-part .separator {
+    margin: 0 15px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

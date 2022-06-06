@@ -1,0 +1,134 @@
+#sectionSix {
+  position: relative;
+  padding: 200px 200px 250px;
+  background: #f8f8f8;
+
+  @media screen and (max-width: 450px) {
+    padding: 100px 50px 100px;
+  }
+
+  .wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .top-part {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 100px;
+
+      @media screen and (max-width: 450px) {
+        margin-bottom: 65px;
+      }
+
+      p {
+        @include titleBefore();
+      }
+
+      img {
+        position: relative;
+        height: 20px;
+        width: 55px;
+      }
+
+      h3 {
+        @include title();
+        margin-top: 40px;
+      }
+
+    }
+
+    .bottom-part {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      @media screen and (max-width: 450px) {
+        flex-direction: column;
+      }
+
+      .card {
+        position: relative;
+        border-radius: 50px;
+        border: 1px solid $orange;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        padding: 45px;
+
+        @media screen and (max-width: 450px) {
+          padding: 30px;
+          margin-bottom: 50px;
+          border: 2px solid $orange;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+        }
+
+        .card-top-part {
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: start;
+          margin-bottom: 45px;
+
+          img {
+            position: relative;
+            height: 72px;
+            width: 72px;
+            border-radius: 100%;
+
+            @media screen and (max-width: 450px) {
+              height: 50px;
+              width: 50px;
+            }
+
+          }
+
+          .separator {
+            margin: 15px 15px 0;
+            font-size: 30px;
+            line-height: 10px;
+          }
+
+          .name {
+            position: relative;
+            @include paragraph();
+            font-weight: 600;
+            font-size: 28px;
+            margin-bottom: 5px;
+
+            @media screen and (max-width: 450px) {
+              margin-bottom: 0;
+              margin-top: 12px;
+            }
+
+          }
+
+        }
+
+        p {
+          @include paragraph();
+          line-height: 35px;
+          font-size: 22px;
+          font-weight: 300;
+          max-width: 360px;
+
+          @media screen and (max-width: 450px) {
+            max-width: available;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

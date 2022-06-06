@@ -1,0 +1,34 @@
+#sectionFive {
+  position: relative;
+  padding: 0 200px 150px;
+
+  @media screen and (max-width: 450px) {
+    padding: 0 50px 50px;
+  }
+
+  .wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .bottom-part {
+      position: relative;
+      display: flex;
+      justify-content: center;
+
+      iframe {
+        position: relative;
+        height: 900px;
+        width: 100%;
+
+        @media screen and (max-width: 450px) {
+          height: 180px;
+        }
+
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,142 @@
+#sectionOne {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+
+  .left-part {
+    position: relative;
+    width: fit-content;
+    background: $blue;
+    padding: 0 75px;
+
+    @media screen and (max-width: 450px) {
+      padding: 0 50px;
+    }
+
+    .wrapper {
+      position: relative;
+      margin: 220px 0 130px;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+
+      @media screen and (max-width: 450px) {
+        margin: 200px 0 60px;
+      }
+
+      h2 {
+        @include title();
+        margin-bottom: 100px;
+        line-height: 75px;
+        color: white;
+
+        @media screen and (max-width: 450px) {
+          margin-bottom: 65px;
+          font-size: 38px;
+
+          br {
+            display: none;
+          }
+
+        }
+
+        span {
+          text-decoration: underline;
+          text-underline-color: white;
+          text-underline-position: under;
+
+          @media screen and (max-width: 450px) {
+            text-decoration: none;
+          }
+
+        }
+
+      }
+
+      p {
+        @include paragraph();
+        color: white;
+
+        @media screen and (max-width: 450px) {
+
+          br {
+            display: none;
+          }
+
+        }
+
+      }
+
+      a {
+
+        .arrow {
+          position: relative;
+          margin: 100px auto 0;
+          height: fit-content;
+          width: fit-content;
+          border-radius: 100%;
+          border: 2px solid white;
+          padding: 9px 11px;
+
+          @media screen and (max-width: 450px) {
+            margin: 65px auto 0;
+            padding: 6px 9px;
+          }
+
+          img {
+            position: relative;
+            transform: rotate(90deg);
+            height: 35px;
+
+            @media screen and (max-width: 450px) {
+              height: 25px;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+    .menu-wrapper {
+      position: absolute;
+      top: 65px;
+      left: 65px;
+      height: 50px;
+      width: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: blueviolet;
+    }
+
+  }
+
+  .right-part {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    background: url('../img/picture-one.png') center/cover no-repeat;
+
+    @media screen and (max-width: 450px) {
+      display: none;
+    }
+
+    .logo {
+      position: relative;
+      top: 65px;
+      left: 65px;
+      height: 38px;
+
+      img {
+        position: relative;
+        height: 100%;
+      }
+
+    }
+
+  }
+
+}
