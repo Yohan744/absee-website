@@ -236,7 +236,7 @@ body {
 }
 @media screen and (max-width: 450px) {
   #sectionTwo .wrapper .bottom-part .left-part h3, #sectionTwo .wrapper .bottom-part .right-part h3 {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 }
 #sectionTwo .wrapper .bottom-part .left-part p, #sectionTwo .wrapper .bottom-part .right-part p {
