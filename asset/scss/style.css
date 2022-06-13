@@ -125,13 +125,49 @@ body {
 #sectionOne .left-part .menu-wrapper {
   position: absolute;
   top: 65px;
-  left: 65px;
-  height: 50px;
-  width: 50px;
+  left: 75px;
+  height: 60px;
+  width: 60px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background: blueviolet;
+  justify-content: space-evenly;
+  cursor: pointer;
+  z-index: 10;
+}
+#sectionOne .left-part .menu-wrapper .middle, #sectionOne .left-part .menu-wrapper .top, #sectionOne .left-part .menu-wrapper .bottom {
+  top: 0;
+  transition: all 0.35s ease-in-out;
+}
+@media screen and (max-width: 450px) {
+  #sectionOne .left-part .menu-wrapper {
+    left: auto;
+  }
+}
+#sectionOne .left-part .menu-wrapper .menu-span {
+  position: relative;
+  height: 4px;
+  width: 100%;
+  border-radius: 50px;
+  background: white;
+  transition: all 0.35s ease-in-out;
+}
+#sectionOne .left-part .menu-wrapper.active {
+  transition: all 0.35s ease-in-out;
+}
+#sectionOne .left-part .menu-wrapper.active .middle {
+  background: transparent;
+  transition: all 0.35s ease-in-out;
+}
+#sectionOne .left-part .menu-wrapper.active .top {
+  transform: rotate(45deg);
+  top: 17px;
+  transition: all 0.35s ease-in-out;
+}
+#sectionOne .left-part .menu-wrapper.active .bottom {
+  transform: rotate(-45deg);
+  top: -14px;
+  transition: all 0.35s ease-in-out;
 }
 #sectionOne .right-part {
   position: relative;
@@ -153,6 +189,68 @@ body {
 #sectionOne .right-part .logo img {
   position: relative;
   height: 100%;
+}
+#sectionOne #menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 46%;
+  background-color: #232221;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 200px 75px;
+  transform: translateX(-100%);
+  transition: all 0.35s ease-in-out;
+}
+#sectionOne #menu.active {
+  transform: translateX(0);
+  transition: all 0.35s ease-in-out;
+}
+#sectionOne #menu a {
+  text-decoration: none;
+}
+#sectionOne #menu a p {
+  position: relative;
+  font-family: "Gotham", sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: left;
+  color: #232221;
+  line-height: 80px;
+  font-size: 60px;
+  color: white;
+  transition: all 0.35s ease-in-out;
+  width: fit-content;
+}
+@media screen and (max-width: 450px) {
+  #sectionOne #menu a p {
+    font-size: 21px;
+    line-height: 30px;
+  }
+}
+#sectionOne #menu a p:after {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  height: 7px;
+  width: 0;
+  background: white;
+  transition: all 0.35s ease-in-out;
+}
+#sectionOne #menu a p:hover:after {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  height: 7px;
+  width: 100%;
+  background: white;
+  transition: all 0.35s ease-in-out;
 }
 
 #sectionTwo {
