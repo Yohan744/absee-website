@@ -215,7 +215,7 @@
     @media screen and (max-width: 450px) {
       height: 100vh;
       width: 100%;
-      padding: 160px 50px 30px 50px;
+      padding: 160px 50px 50px 50px;
     }
 
     &.active {
@@ -225,12 +225,14 @@
 
     a {
       text-decoration: none;
+      color: white !important;
+      z-index: 6;
 
       p {
         @include paragraph();
         line-height: 80px;
         font-size: 60px;
-        color: white;
+        color: white !important;
         transition: all 0.35s ease-in-out;
         width: fit-content;
 

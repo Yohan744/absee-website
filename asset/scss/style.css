@@ -229,7 +229,7 @@ body.activeMenu {
   #sectionOne #menu {
     height: 100vh;
     width: 100%;
-    padding: 160px 50px 30px 50px;
+    padding: 160px 50px 50px 50px;
   }
 }
 #sectionOne #menu.active {
@@ -238,6 +238,8 @@ body.activeMenu {
 }
 #sectionOne #menu a {
   text-decoration: none;
+  color: white !important;
+  z-index: 6;
 }
 #sectionOne #menu a p {
   position: relative;
@@ -249,7 +251,7 @@ body.activeMenu {
   color: #232221;
   line-height: 80px;
   font-size: 60px;
-  color: white;
+  color: white !important;
   transition: all 0.35s ease-in-out;
   width: fit-content;
 }
@@ -506,6 +508,7 @@ body.activeMenu {
 }
 #sectionThree .wrapper .bottom-part .card p span {
   font-weight: 600;
+  line-height: 25px;
 }
 
 #sectionFour {
