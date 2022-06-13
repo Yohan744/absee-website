@@ -10,6 +10,7 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   overflow-y: scroll;
+  background: transparent;
 }
 body.activeMenu {
   overflow-y: hidden;
@@ -238,8 +239,6 @@ body.activeMenu {
 }
 #sectionOne #menu a {
   text-decoration: none;
-  color: white !important;
-  z-index: 6;
 }
 #sectionOne #menu a p {
   position: relative;
@@ -251,7 +250,7 @@ body.activeMenu {
   color: #232221;
   line-height: 80px;
   font-size: 60px;
-  color: white !important;
+  color: white;
   transition: all 0.35s ease-in-out;
   width: fit-content;
 }
@@ -265,6 +264,7 @@ body.activeMenu {
   #sectionOne #menu a p {
     font-size: 31px;
     line-height: 40px;
+    color: white;
   }
 }
 #sectionOne #menu a p:after {

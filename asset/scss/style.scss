@@ -9,6 +9,7 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   overflow-y: scroll;
+  background: transparent;
 
   &.activeMenu {
     overflow-y: hidden;

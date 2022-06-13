@@ -225,20 +225,19 @@
 
     a {
       text-decoration: none;
-      color: white !important;
-      z-index: 6;
 
       p {
         @include paragraph();
         line-height: 80px;
         font-size: 60px;
-        color: white !important;
+        color: white;
         transition: all 0.35s ease-in-out;
         width: fit-content;
 
         @media screen and (max-width: 450px) {
           font-size: 31px;
           line-height: 40px;
+          color: white;
         }
 
         &:after {
