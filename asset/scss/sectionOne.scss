@@ -203,7 +203,7 @@
     left: 0;
     height: 100%;
     width: 46%;
-    background-color: red;
+    background-color: $grey;
     z-index: 5;
     display: flex;
     flex-direction: column;
@@ -224,7 +224,7 @@
     }
 
     a {
-      text-decoration: none;
+      text-decoration-color: transparent;
 
       @media screen and (max-width: 450px) {
         color: white !important;
@@ -253,6 +253,11 @@
           width: 0;
           background: white;
           transition: all 0.35s ease-in-out;
+
+          @media screen and (max-width: 450px) {
+            bottom: 0;
+          }
+
         }
 
         &:hover {
@@ -266,6 +271,11 @@
             width: 100%;
             background: white;
             transition: all 0.35s ease-in-out;
+
+            @media screen and (max-width: 450px) {
+              bottom: 0;
+            }
+
           }
 
         }
