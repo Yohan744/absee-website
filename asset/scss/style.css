@@ -9,6 +9,10 @@
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+body.activeMenu {
+  overflow-y: hidden;
 }
 
 #sectionOne {
@@ -36,7 +40,7 @@ body {
 }
 @media screen and (max-width: 450px) {
   #sectionOne .left-part .wrapper {
-    margin: 200px 0 60px;
+    margin: 160px 0 60px;
   }
 }
 #sectionOne .left-part .wrapper h2 {
@@ -135,6 +139,12 @@ body {
   cursor: pointer;
   z-index: 10;
 }
+@media screen and (max-width: 450px) {
+  #sectionOne .left-part .menu-wrapper {
+    height: 50px;
+    width: 50px;
+  }
+}
 #sectionOne .left-part .menu-wrapper .middle, #sectionOne .left-part .menu-wrapper .top, #sectionOne .left-part .menu-wrapper .bottom {
   top: 0;
   transition: all 0.35s ease-in-out;
@@ -164,10 +174,20 @@ body {
   top: 17px;
   transition: all 0.35s ease-in-out;
 }
+@media screen and (max-width: 450px) {
+  #sectionOne .left-part .menu-wrapper.active .top {
+    top: 14px;
+  }
+}
 #sectionOne .left-part .menu-wrapper.active .bottom {
   transform: rotate(-45deg);
   top: -14px;
   transition: all 0.35s ease-in-out;
+}
+@media screen and (max-width: 450px) {
+  #sectionOne .left-part .menu-wrapper.active .bottom {
+    top: -12px;
+  }
 }
 #sectionOne .right-part {
   position: relative;
@@ -205,6 +225,12 @@ body {
   transform: translateX(-100%);
   transition: all 0.35s ease-in-out;
 }
+@media screen and (max-width: 450px) {
+  #sectionOne #menu {
+    width: 100%;
+    padding: 140px 50px 100px 50px;
+  }
+}
 #sectionOne #menu.active {
   transform: translateX(0);
   transition: all 0.35s ease-in-out;
@@ -230,6 +256,12 @@ body {
   #sectionOne #menu a p {
     font-size: 21px;
     line-height: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  #sectionOne #menu a p {
+    font-size: 31px;
+    line-height: 40px;
   }
 }
 #sectionOne #menu a p:after {

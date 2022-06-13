@@ -21,7 +21,7 @@
       flex-direction: column;
 
       @media screen and (max-width: 450px) {
-        margin: 200px 0 60px;
+        margin: 160px 0 60px;
       }
 
       h2 {
@@ -113,6 +113,11 @@
       cursor: pointer;
       z-index: 10;
 
+      @media screen and (max-width: 450px) {
+        height: 50px;
+        width: 50px;
+      }
+
       .middle, .top, .bottom {
         top: 0;
         transition: all 0.35s ease-in-out;
@@ -143,12 +148,22 @@
           transform: rotate(45deg);
           top: 17px;
           transition: all 0.35s ease-in-out;
+
+          @media screen and (max-width: 450px) {
+            top: 14px;
+          }
+
         }
 
         .bottom {
           transform: rotate(-45deg);
           top: -14px;
           transition: all 0.35s ease-in-out;
+
+          @media screen and (max-width: 450px) {
+            top: -12px;
+          }
+
         }
 
       }
@@ -197,6 +212,11 @@
     transform: translateX(-100%);
     transition: all 0.35s ease-in-out;
 
+    @media screen and (max-width: 450px) {
+      width: 100%;
+      padding: 140px 50px 100px 50px;
+    }
+
     &.active {
       transform: translateX(0);
       transition: all 0.35s ease-in-out;
@@ -212,6 +232,11 @@
         color: white;
         transition: all 0.35s ease-in-out;
         width: fit-content;
+
+        @media screen and (max-width: 450px) {
+          font-size: 31px;
+          line-height: 40px;
+        }
 
         &:after {
           content: "";
