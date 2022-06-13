@@ -240,6 +240,11 @@ body.activeMenu {
 #sectionOne #menu a {
   text-decoration: none;
 }
+@media screen and (max-width: 450px) {
+  #sectionOne #menu a {
+    color: white !important;
+  }
+}
 #sectionOne #menu a p {
   position: relative;
   font-family: "Gotham", sans-serif;

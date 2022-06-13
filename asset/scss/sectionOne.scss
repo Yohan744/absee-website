@@ -226,6 +226,10 @@
     a {
       text-decoration: none;
 
+      @media screen and (max-width: 450px) {
+        color: white !important;
+      }
+
       p {
         @include paragraph();
         line-height: 80px;
