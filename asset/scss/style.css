@@ -264,7 +264,7 @@ body.activeMenu {
   #sectionOne #menu a p {
     font-size: 31px;
     line-height: 40px;
-    color: white;
+    color: white !important;
   }
 }
 #sectionOne #menu a p:after {
@@ -508,7 +508,7 @@ body.activeMenu {
 }
 #sectionThree .wrapper .bottom-part .card p span {
   font-weight: 600;
-  line-height: 25px;
+  line-height: 0;
 }
 
 #sectionFour {
@@ -875,8 +875,7 @@ body.activeMenu {
 }
 @media screen and (max-width: 450px) {
   #sectionSix .wrapper .bottom-part .card .card-top-part .name {
-    margin-bottom: 0;
-    margin-top: 12px;
+    margin-bottom: 10px;
   }
 }
 #sectionSix .wrapper .bottom-part .card p {

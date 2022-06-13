@@ -237,7 +237,7 @@
         @media screen and (max-width: 450px) {
           font-size: 31px;
           line-height: 40px;
-          color: white;
+          color: white !important;
         }
 
         &:after {
