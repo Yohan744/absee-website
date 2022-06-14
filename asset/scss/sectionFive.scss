@@ -3,7 +3,7 @@
   padding: 0 200px 150px;
 
   @media screen and (max-width: 450px) {
-    padding: 0 50px 50px;
+    padding: 0 0 50px;
   }
 
   .wrapper {
@@ -23,6 +23,7 @@
 
         @media screen and (max-width: 450px) {
           height: 180px;
+          border: 0;
         }
 
       }

@@ -29,7 +29,7 @@ body.activeMenu {
 }
 @media screen and (max-width: 450px) {
   #sectionOne .left-part {
-    padding: 0 50px;
+    padding: 0 25px;
   }
 }
 #sectionOne .left-part .wrapper {
@@ -194,7 +194,7 @@ body.activeMenu {
   position: relative;
   display: flex;
   flex-grow: 1;
-  background: url("../img/picture-one.png") center/cover no-repeat;
+  background: url("../img/picture-one.jpg") center/cover no-repeat;
 }
 @media screen and (max-width: 450px) {
   #sectionOne .right-part {
@@ -309,7 +309,7 @@ body.activeMenu {
 }
 @media screen and (max-width: 450px) {
   #sectionTwo {
-    padding: 100px 50px 100px;
+    padding: 100px 25px 100px;
   }
 }
 #sectionTwo .wrapper {
@@ -419,7 +419,7 @@ body.activeMenu {
 }
 @media screen and (max-width: 450px) {
   #sectionThree {
-    padding: 100px 50px 100px;
+    padding: 100px 25px 100px;
   }
 }
 #sectionThree .wrapper {
@@ -732,7 +732,7 @@ body.activeMenu {
 }
 @media screen and (max-width: 450px) {
   #sectionFive {
-    padding: 0 50px 50px;
+    padding: 0 0 50px;
   }
 }
 #sectionFive .wrapper {
@@ -753,6 +753,7 @@ body.activeMenu {
 @media screen and (max-width: 450px) {
   #sectionFive .wrapper .bottom-part iframe {
     height: 180px;
+    border: 0;
   }
 }
 
@@ -763,7 +764,7 @@ body.activeMenu {
 }
 @media screen and (max-width: 450px) {
   #sectionSix {
-    padding: 100px 50px 100px;
+    padding: 100px 25px 100px;
   }
 }
 #sectionSix .wrapper {

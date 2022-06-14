@@ -10,7 +10,7 @@
     padding: 0 75px;
 
     @media screen and (max-width: 450px) {
-      padding: 0 50px;
+      padding: 0 25px;
     }
 
     .wrapper {
@@ -176,7 +176,7 @@
     position: relative;
     display: flex;
     flex-grow: 1;
-    background: url('../img/picture-one.png') center/cover no-repeat;
+    background: url('../img/picture-one.jpg') center/cover no-repeat;
 
     @media screen and (max-width: 450px) {
       display: none;
