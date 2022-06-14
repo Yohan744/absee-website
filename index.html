@@ -15,7 +15,7 @@
 
         <div class="wrapper">
 
-            <h2>L'outil numérique pour<br> apprendre le braille<br><span> à son rythme</span></h2>
+            <h2>L'outil numérique pour<br class="line-break"> apprendre le braille<br class="line-break"><br class="mobile-line-break"><span class="underline"> à son rythme</span></h2>
             <p>Découvrez absee, notre objet connecté qui vous<br> accompagne tout au long de votre apprentissage du<br> braille.
                 Des fonctionnalités adaptées à tous les degrés de<br> déficience visuelle, pour une utilisation plus
                 agréable.</p>
@@ -32,6 +32,10 @@
             <div class="menu-span top"></div>
             <div class="menu-span middle"></div>
             <div class="menu-span bottom"></div>
+        </div>
+
+        <div class="logo-mobile">
+            <img src="asset/img/absee-white.svg" alt="logo">
         </div>
 
     </div>
@@ -407,7 +411,10 @@
 <script src="asset/js/splide.min.js"></script>
 <script>
     var splide = new Splide( '.splide', {
-        autoplay: true
+        autoplay: true,
+        start: 1,
+        rewind: true,
+        rewindByDrag: true
     } );
     var bar = splide.root.querySelector( '.my-slider-progress-bar' );
 

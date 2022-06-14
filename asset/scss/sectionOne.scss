@@ -21,7 +21,7 @@
       flex-direction: column;
 
       @media screen and (max-width: 450px) {
-        margin: 160px 0 60px;
+        margin: 130px 0 60px;
       }
 
       h2 {
@@ -30,12 +30,24 @@
         line-height: 75px;
         color: white;
 
+        .line-break {
+          display: block;
+        }
+
+        .mobile-line-break {
+          display: none;
+        }
+
         @media screen and (max-width: 450px) {
           margin-bottom: 65px;
           font-size: 38px;
 
-          br {
+          .line-break {
             display: none;
+          }
+
+          .mobile-line-break {
+            display: block;
           }
 
         }
@@ -44,11 +56,6 @@
           text-decoration: underline;
           text-underline-color: white;
           text-underline-position: under;
-
-          @media screen and (max-width: 450px) {
-            text-decoration: none;
-          }
-
         }
 
       }
@@ -59,7 +66,7 @@
 
         @media screen and (max-width: 450px) {
 
-          br {
+          .br {
             display: none;
           }
 
@@ -114,6 +121,7 @@
       z-index: 10;
 
       @media screen and (max-width: 450px) {
+        top: 30px;
         height: 50px;
         width: 50px;
       }
@@ -166,6 +174,19 @@
 
         }
 
+      }
+
+    }
+
+    .logo-mobile {
+      display: none;
+
+      @media screen and (max-width: 450px) {
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 25px;
+        width: 120px;
       }
 
     }
