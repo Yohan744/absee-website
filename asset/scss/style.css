@@ -732,7 +732,7 @@ body.activeMenu {
 }
 @media screen and (max-width: 450px) {
   #sectionFive {
-    padding: 0 0 50px;
+    padding: 0;
   }
 }
 #sectionFive .wrapper {
@@ -752,7 +752,7 @@ body.activeMenu {
 }
 @media screen and (max-width: 450px) {
   #sectionFive .wrapper .bottom-part iframe {
-    height: 180px;
+    height: 220px;
     border: 0;
   }
 }
