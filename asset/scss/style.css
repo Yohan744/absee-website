@@ -24,7 +24,8 @@ body.activeMenu {
 #sectionOne .left-part {
   position: relative;
   width: fit-content;
-  background: #1d5afc;
+  background-color: #1d5afc;
+  transition: background-color 0.35s ease-in-out;
   padding: 0 75px;
 }
 @media screen and (max-width: 450px) {
@@ -34,7 +35,7 @@ body.activeMenu {
 }
 #sectionOne .left-part .wrapper {
   position: relative;
-  margin: 220px 0 130px;
+  margin: 220px 0 210px;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -55,6 +56,7 @@ body.activeMenu {
   margin-bottom: 100px;
   line-height: 75px;
   color: white;
+  font-size: 55px;
 }
 @media screen and (max-width: 450px) {
   #sectionOne .left-part .wrapper h2 {
@@ -84,6 +86,33 @@ body.activeMenu {
   text-decoration: underline;
   text-underline-color: white;
   text-underline-position: under;
+}
+#sectionOne .left-part .wrapper h2 .underline {
+  position: relative;
+}
+#sectionOne .left-part .wrapper h2 .underline.transition {
+  animation-name: changeText;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes changeText {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  33% {
+    top: 10px;
+    opacity: 0;
+  }
+  66% {
+    top: -10px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
 }
 #sectionOne .left-part .wrapper p {
   position: relative;
@@ -233,7 +262,7 @@ body.activeMenu {
   top: 0;
   left: 0;
   height: 100%;
-  width: 46%;
+  width: 41.7%;
   background-color: #232221;
   z-index: 5;
   display: flex;

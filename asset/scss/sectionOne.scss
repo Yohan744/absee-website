@@ -6,7 +6,8 @@
   .left-part {
     position: relative;
     width: fit-content;
-    background: $blue;
+    background-color: $blue;
+    transition: background-color 0.35s ease-in-out;
     padding: 0 75px;
 
     @media screen and (max-width: 450px) {
@@ -15,7 +16,7 @@
 
     .wrapper {
       position: relative;
-      margin: 220px 0 130px;
+      margin: 220px 0 210px;
       height: fit-content;
       display: flex;
       flex-direction: column;
@@ -29,6 +30,7 @@
         margin-bottom: 100px;
         line-height: 75px;
         color: white;
+        font-size: 55px;
 
         .line-break {
           display: block;
@@ -56,6 +58,43 @@
           text-decoration: underline;
           text-underline-color: white;
           text-underline-position: under;
+        }
+
+        .underline {
+          position: relative;
+
+          &.transition {
+            animation-name: changeText;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+
+            @keyframes changeText {
+
+              0% {
+                top: 0;
+                opacity: 1;
+              }
+
+              33% {
+                top: 10px;
+                opacity: 0;
+              }
+
+              66% {
+                top: -10px;
+                opacity: 0;
+              }
+
+              100% {
+                top: 0;
+                opacity: 1;
+              }
+
+            }
+
+          }
+
         }
 
       }
@@ -223,7 +262,7 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 46%;
+    width: 41.7%;
     background-color: $grey;
     z-index: 5;
     display: flex;
