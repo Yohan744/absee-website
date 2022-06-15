@@ -796,15 +796,16 @@ body.activeMenu {
   display: flex;
   justify-content: center;
 }
-#sectionFive .wrapper .bottom-part iframe {
+#sectionFive .wrapper .bottom-part video {
   position: relative;
   height: 900px;
   width: 100%;
+  border: 0;
+  object-fit: cover;
 }
 @media screen and (max-width: 450px) {
-  #sectionFive .wrapper .bottom-part iframe {
-    height: 220px;
-    border: 0;
+  #sectionFive .wrapper .bottom-part video {
+    height: 250px;
   }
 }
 
