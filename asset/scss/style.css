@@ -801,7 +801,6 @@ body.activeMenu {
   height: 855px;
   width: 100%;
   border: 0;
-  object-fit: cover;
 }
 @media screen and (max-width: 450px) {
   #sectionFive .wrapper .bottom-part iframe {
