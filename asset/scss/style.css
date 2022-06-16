@@ -758,6 +758,7 @@ body.activeMenu {
   position: relative;
   height: 55%;
   width: 75%;
+  border-radius: 30px;
 }
 #sectionFour .wrapper .bottom-part .splide .my-slider-progress {
   padding: 0 110px;
